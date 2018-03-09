@@ -1,0 +1,12 @@
+# KEYBOARD CONFIGURATION FILE
+
+# Consult the keyboard(5) manual page.
+
+XKBMODEL="pc105"
+XKBLAYOUT="de"
+XKBVARIANT="slicedev"
+#XKBOPTIONS="nbsp:none,terminate:ctrl_alt_bksp,caps:hyper"
+#XKBOPTIONS="nbsp:none,terminate:ctrl_alt_bksp,lv3:caps_switch,altwin:swap_lalt_lwin,altwin:left_meta_win"
+#XKBOPTIONS="nbsp:none,terminate:ctrl_alt_bksp,lv3:caps_switch:altwin:swap_lalt_lwin"
+
+BACKSPACE="guess"
