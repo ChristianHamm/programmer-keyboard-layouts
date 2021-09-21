@@ -6,3 +6,12 @@ Level 1 Layout (basic german layout)
 
 Level 3 Layout (inspired by Neo layout)
 ![Level 3 Layout (inspired by Neo layout)](images/Keyboard-Level3.png)
+
+# Windows tweaks for Capslock
+
+Use this AutoHotkey snippet to change Capslock to AltGr (R-Alt):
+
+```
+*$Capslock:RAlt 
+```
+
