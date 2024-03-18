@@ -1,0 +1,66 @@
+// based on a keyboard map from an 'xkb/symbols/de' file
+
+partial alphanumeric_keys
+xkb_symbols "slicedev" {
+
+    include "de(basic)"
+
+    name[Group1]="German";
+
+    key <AE01>  { [         1,     exclam,  exclam,   exclamdown ] };
+    key <AE02>  { [         2,    quotedbl,  quotedbl,    oneeighth ] };
+    key <AE03>  { [         3, section, 	numbersign,    sterling ] };
+    key <AE04>  { [         4,     dollar,   EuroSign,       dollar ] };
+    key <AE05>  { [         5,    percent,      bracketleft, threeeighths ] };
+    key <AE06>  { [         6, ampersand, bracketright, fiveeighths ] };
+    key <AE07>  { [         7,  slash,    bar, seveneighths ] };
+    key <AE08>  { [         8,   parenleft,  braceleft,    trademark ] };
+    key <AE09>  { [         9,  parenright, braceright,    plusminus ] };
+    key <AE10>  { [         0, equal,   equal,       degree ] };
+    key <AE11> {type[Group1]="FOUR_LEVEL_PLUS_LOCK",  symbols[Group1]=
+                  [ssharp, question, question, questiondown, 0x1001E9E ]};
+    key <AE12>  { [dead_acute, dead_grave, dead_cedilla,  dead_ogonek ] };
+
+    key <AD01>  { [         q,          Q,           numbersign,  Greek_OMEGA ] };
+    key <AD02>  { [         w,          W,      underscore,      Lstroke ] };
+    key <AD03>  { [         e,          E,            bracketleft,            E ] };
+    key <AD04>  { [         r,          R,    bracketright,   registered ] };
+    key <AD05>  { [         t,          T,       asciicircum,       Tslash ] };
+    key <AD06>  { [         z,          Z,    exclam,          yen ] };
+    key <AD07>  { [         u,          U,    less,      uparrow ] };
+    key <AD08>  { [         i,          I,   greater,     idotless ] };
+    key <AD09>  { [         o,          O,       ampersand,     Ooblique ] };
+    key <AD10>  { [         p,          P,        percent,        THORN ] };
+    key <AD11>  { [udiaeresis, Udiaeresis, apostrophe, dead_abovering ] };
+    key <AD12>  { [      plus,   asterisk,   exclam,  macron ]      };
+
+    key <AC01>  { [         a,          A,           backslash,           AE ] };
+    key <AC02>  { [         s,          S,       slash,      section ] };
+    key <AC03>  { [         d,          D,          braceleft,          ETH ] };
+    key <AC04>  { [         f,          F,      braceright,  ordfeminine ] };
+    key <AC05>  { [         g,          G,          asterisk,          ENG ] };
+    key <AC06>  { [         h,          H,      slash,      Hstroke ] };
+    key <AC07>  { [         j,          J,    parenleft,    dead_horn ] };
+    key <AC08>  { [         k,          K,          parenright,    ampersand ] };
+    key <AC09>  { [         l,          L,      dollar,      Lstroke ] };
+    key <AC10>  { [odiaeresis, Odiaeresis, colon, dead_belowdot ] };
+    key <AC11>  { [adiaeresis, Adiaeresis, at, dead_caron ] };
+    key <BKSL>  { [numbersign, apostrophe, quotedbl,   dead_breve ] };
+
+    key <AB01>  { [         y,          Y,       numbersign,    U203A       ] };
+    key <AB02>  { [         x,          X,        numbersign,    U2039       ] };
+    key <AB03>  { [         c,          C,        bar,    U2039       ] };
+    key <AB04>  { [         v,          V,   asciitilde, singlelowquotemark ]   };
+    key <AB05>  { [         b,          B,  asciitilde, leftsinglequotemark ] };
+    key <AB06>  { [         n,          N, grave, rightsinglequotemark ] };
+    key <AB07>  { [         m,          M, equal, rightsinglequotemark ] };
+    key <AB08>  { [     comma,  semicolon,       semicolon,     multiply   ] };
+    key <AB09>  { [    period,      colon,                period,     division   ] };
+    key <AB10>  { [     minus, underscore,               minus,     emdash     ] };
+    //key <LSGT>  { [     less,     greater,                  bar,     NoSymbol   ] };
+    key <LSGT>  { [asciicircum, degree,     U2032,    U2033 ] };
+
+    include "kpdl(comma)"
+    //include "level3(ralt_switch)"
+};
+
