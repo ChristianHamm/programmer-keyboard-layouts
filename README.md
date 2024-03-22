@@ -7,6 +7,26 @@ Level 1 Layout (basic german layout)
 Level 3 Layout (inspired by Neo layout)
 ![Level 3 Layout (inspired by Neo layout)](images/Keyboard-Level3.png)
 
+# NixOS
+
+Add this to your configuration: 
+
+```
+  ...
+
+  services.xserver.xkb.layout = "slicedev";                                                                                            
+  services.xserver.xkb.options = "nbsp:none,terminate:ctrl_alt_bksp,lv3:caps_switch";                                                  
+  
+  services.xserver.xkb.extraLayouts.slicedev = {                                                                                       
+      description = "Slice dev";                                                                                                       
+      languages   = [ "ger" ];                                                                                                         
+      symbolsFile = /path/to/slicedev.xkb;                                                      
+ };
+
+ ...
+
+```
+
 # Windows tweaks for Capslock
 
 ## Using AutoHotkey
